@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Search, List, ChevronDown, Star, Image as ImageIcon } from 'lucide-react';
 import { Avatar } from '@/components/ui/avatar'; // Import Avatar component
-import { dummyGridData, GridItem } from '@/app/dashboard/data'; // Import from new data file
+import { dummyGridData, GridItem } from '@/app/dashboard/data/data'; // Import from new data file
 
 export default function GridsAndWorkbooksSection() {
   const [activeTab, setActiveTab] = useState('my-grids');

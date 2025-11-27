@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { videoSlides } from '@/app/dashboard/video-data';
+import { videoSlides } from '@/app/dashboard/data/video-data';
 
 export default function LatestFromBitscale() {
   const [currentSlide, setCurrentSlide] = useState(0);
