@@ -26,8 +26,8 @@ export const videoSlides: VideoSlide[] = [
     'Prerequisites for this Integration is that you should have a HubSpot account and Copy the API key. We simple aad our API key through the integrations pa...',
     videoUrl: 'https://www.youtube.com/watch?v=of5FDgfAbaQ',
     thumbnail: 'https://img.youtube.com/vi/of5FDgfAbaQ/0.jpg',
-    bgColor: '#8DBAD0',
-    dotColor: '#8DBAD0',
+    bgColor: '#347FA9',
+    dotColor: '#347FA9',
   },
   {
     id: '3',
@@ -41,11 +41,11 @@ export const videoSlides: VideoSlide[] = [
   },
   {
     id: '4',
-    title: 'Find Companies hiring for a specific role',
+    title: 'Linkup X Bitscale',
     description:
-      'Integrate Bitscale with CRMs, outbound tools, or data platforms using Bridge, API Key, or Webhook methods. Connect HubSpot, Instantly, Smartlead, and more to automate data syncs and workflows.',
-    videoUrl: 'https://www.youtube.com/watch?v=yheCWm5V4iM',
-    thumbnail: 'https://img.youtube.com/vi/v=yheCWm5V4iM/0.jpg',
+    'In a world where speed matters and relevance wins deals, waiting on traditional tools or parsing long summaries from chatbots won’t cut it. Bitscale and LinkUp together give sales teams exactly what they need:',
+    videoUrl: 'https://www.youtube.com/watch?v=OkK4vrUWtkg',
+    thumbnail: 'https://img.youtube.com/vi/OkK4vrUWtkg/0.jpg',
     bgColor: '#347FA9',
     dotColor: '#347FA9',
   },

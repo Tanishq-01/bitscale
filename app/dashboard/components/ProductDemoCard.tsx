@@ -2,14 +2,14 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { FileCheck } from 'lucide-react';
+import { FileCheck, FileText } from 'lucide-react';
 
 export default function ProductDemoCard() {
   return (
     <div className="bg-[#E7F3F8] rounded-lg p-6 shadow-sm flex-1">
       <div className="flex items-center gap-4 mb-4">
-        <div className="bg-gray-100 p-3 rounded-md">
-          <Image src="/window.svg" alt="window icon" width={24} height={24} />
+        <div className="bg-black p-3 rounded-full flex items-center justify-center">
+          <FileText className="h-3 w-3 text-white" />
         </div>
         <div>
           <h2 className="font-semibold text-gray-900 text-xs">Complete product demo</h2>
@@ -23,23 +23,36 @@ export default function ProductDemoCard() {
         <p className="text-right text-sm text-gray-500 mt-1 text-xs">75%</p>
       </div>
       <div className="grid grid-cols-2 gap-y-2 text-gray-700 text-xs">
+        {/* Ticked items */}
         <div className="flex items-center gap-2">
-          <FileCheck className="h-4 w-4 text-blue-600" />
+          <div className="w-4 h-4 flex items-center justify-center rounded-full bg-blue-600 text-white text-[10px]">
+            ✓
+          </div>
           Create your data list
         </div>
+
         <div className="flex items-center gap-2">
-          <FileCheck className="h-4 w-4 text-blue-600" />
+          <div className="w-4 h-4 flex items-center justify-center rounded-full bg-blue-600 text-white text-[10px]">
+            ✓
+          </div>
           Learn about BitAgent
         </div>
+
         <div className="flex items-center gap-2">
-          <FileCheck className="h-4 w-4 text-blue-600" />
+          <div className="w-4 h-4 flex items-center justify-center rounded-full bg-blue-600 text-white text-[10px]">
+            ✓
+          </div>
           Connect an integration
         </div>
+
+        {/* Unticked item */}
         <div className="flex items-center gap-2">
-          <input type="checkbox" className="form-checkbox h-4 w-4 rounded text-blue-600 border-gray-300 focus:ring-blue-500" />
+          <div className="w-4 h-4 rounded-full border-2 border-gray-300"></div>
           Customise waterfall providers
         </div>
       </div>
+
+
     </div>
   );
 }
