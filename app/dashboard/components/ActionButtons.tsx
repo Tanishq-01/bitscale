@@ -2,7 +2,11 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Home, Users } from 'lucide-react';
 
-export default function ActionButtons() {
+interface ActionButtonsProps {
+  onFindPeopleClick: () => void;
+}
+
+export default function ActionButtons({ onFindPeopleClick }: ActionButtonsProps) {
   return (
     <div className="flex items-center gap-4">
       <Button className="flex items-center gap-2 bg-white text-gray-700 hover:bg-gray-50 border border-gray-300">
@@ -10,7 +14,7 @@ export default function ActionButtons() {
         Find Companies
       </Button>
 
-      <Button className="flex items-center gap-2 bg-white text-gray-700 hover:bg-gray-50 border border-gray-300">
+      <Button className="flex items-center gap-2 bg-white text-gray-700 hover:bg-gray-50 border border-gray-300" onClick={onFindPeopleClick}>
         <Users className="h-4 w-4" />
         Find People
       </Button>

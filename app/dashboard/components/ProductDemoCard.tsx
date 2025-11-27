@@ -1,5 +1,8 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
+import { FileCheck } from 'lucide-react';
 
 export default function ProductDemoCard() {
   return (
@@ -21,19 +24,19 @@ export default function ProductDemoCard() {
       </div>
       <div className="grid grid-cols-2 gap-y-2 text-gray-700 text-xs">
         <div className="flex items-center gap-2">
-          <Image src="/next.svg" alt="check icon" width={16} height={16} /> {/* Replace with a proper check icon */}
+          <FileCheck className="h-4 w-4 text-blue-600" />
           Create your data list
         </div>
         <div className="flex items-center gap-2">
-          <Image src="/next.svg" alt="check icon" width={16} height={16} /> {/* Replace with a proper check icon */}
+          <FileCheck className="h-4 w-4 text-blue-600" />
           Learn about BitAgent
         </div>
         <div className="flex items-center gap-2">
-          <Image src="/next.svg" alt="check icon" width={16} height={16} /> {/* Replace with a proper check icon */}
+          <FileCheck className="h-4 w-4 text-blue-600" />
           Connect an integration
         </div>
         <div className="flex items-center gap-2">
-          <input type="radio" className="form-radio text-blue-600" />
+          <input type="checkbox" className="form-checkbox h-4 w-4 rounded text-blue-600 border-gray-300 focus:ring-blue-500" />
           Customise waterfall providers
         </div>
       </div>
