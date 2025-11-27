@@ -4,6 +4,7 @@ export interface GridItem {
   editedBy: string;
   lastEdited: string;
   typeIcons: string[];
+  isStarred?: boolean; // New property
 }
 
 export const dummyGridData: GridItem[] = [
@@ -12,7 +13,7 @@ export const dummyGridData: GridItem[] = [
     name: 'Workbook - Testing design Ideas for grid and workbook',
     editedBy: 'Sam Taylor',
     lastEdited: '06 Aug, 2025',
-    typeIcons: ['/vercel.svg', '/next.svg', '/file.svg'], // Placeholder icons
+    typeIcons: ['/vercel.svg', '/next.svg', '/file.svg'],
   },
   {
     id: '2',
@@ -20,6 +21,7 @@ export const dummyGridData: GridItem[] = [
     editedBy: 'Chris Parker',
     lastEdited: '06 Aug, 2025',
     typeIcons: ['/vercel.svg'],
+    isStarred: true,
   },
   {
     id: '3',
@@ -34,6 +36,7 @@ export const dummyGridData: GridItem[] = [
     editedBy: 'Alex Morgan',
     lastEdited: '06 Aug, 2025',
     typeIcons: ['/vercel.svg'],
+    isStarred: true,
   },
   {
     id: '5',
@@ -55,6 +58,7 @@ export const dummyGridData: GridItem[] = [
     editedBy: 'Jone Doe',
     lastEdited: '06 Aug, 2025',
     typeIcons: ['/vercel.svg'],
+    isStarred: true,
   },
   {
     id: '8',

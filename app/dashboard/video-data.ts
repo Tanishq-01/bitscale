@@ -11,31 +11,41 @@ export interface VideoSlide {
 export const videoSlides: VideoSlide[] = [
   {
     id: '1',
-    title: 'How to Integrate 2 Way HubSpot',
+    title: 'Bitscale is the best for BDRs',
     description:
       'Prerequisites for this Integration is that you should have a HubSpot account and Copy the API key. We simple aad our API key through the integrations pa...',
-    videoUrl: 'https://www.youtube.com/watch?v=video1',
-    thumbnail: 'https://via.placeholder.com/192x112?text=Video+1',
+    videoUrl: 'https://www.youtube.com/watch?v=mR3YaA2m7KQ',
+    thumbnail: 'https://img.youtube.com/vi/mR3YaA2m7KQ/0.jpg',
     bgColor: '#347FA9',
     dotColor: '#347FA9',
   },
   {
     id: '2',
-    title: 'Mastering Data Analytics',
+    title: 'Hiring Signal based Outreach',
     description:
-      'Learn how to leverage data analytics to drive business growth and make informed decisions.',
-    videoUrl: 'https://www.youtube.com/watch?v=video2',
-    thumbnail: 'https://via.placeholder.com/192x112?text=Video+2',
+    'Prerequisites for this Integration is that you should have a HubSpot account and Copy the API key. We simple aad our API key through the integrations pa...',
+    videoUrl: 'https://www.youtube.com/watch?v=of5FDgfAbaQ',
+    thumbnail: 'https://img.youtube.com/vi/of5FDgfAbaQ/0.jpg',
     bgColor: '#8DBAD0',
     dotColor: '#8DBAD0',
   },
   {
     id: '3',
-    title: 'Understanding Cloud Computing',
+    title: 'Set up your first integration on Bitscale',
     description:
-      'A comprehensive guide to cloud computing, its benefits, and how to get started.',
-    videoUrl: 'https://www.youtube.com/watch?v=video3',
-    thumbnail: 'https://via.placeholder.com/192x112?text=Video+3',
+      'Integrate Bitscale with CRMs, outbound tools, or data platforms using Bridge, API Key, or Webhook methods. Connect HubSpot, Instantly, Smartlead, and more to automate data syncs and workflows.',
+    videoUrl: 'https://www.youtube.com/watch?v=GYg-gksF2dc',
+    thumbnail: 'https://img.youtube.com/vi/GYg-gksF2dc/0.jpg',
+    bgColor: '#347FA9',
+    dotColor: '#347FA9',
+  },
+  {
+    id: '4',
+    title: 'Find Companies hiring for a specific role',
+    description:
+      'Integrate Bitscale with CRMs, outbound tools, or data platforms using Bridge, API Key, or Webhook methods. Connect HubSpot, Instantly, Smartlead, and more to automate data syncs and workflows.',
+    videoUrl: 'https://www.youtube.com/watch?v=yheCWm5V4iM',
+    thumbnail: 'https://img.youtube.com/vi/v=yheCWm5V4iM/0.jpg',
     bgColor: '#347FA9',
     dotColor: '#347FA9',
   },

@@ -9,7 +9,9 @@ import { dummyGridData, GridItem } from '@/app/dashboard/data'; // Import from n
 export default function GridsAndWorkbooksSection() {
   const [activeTab, setActiveTab] = useState('my-grids');
 
-  const filteredData = dummyGridData; // For now, both tabs show all data
+  const filteredData = activeTab === 'my-grids'
+    ? dummyGridData
+    : dummyGridData.filter(item => item.isStarred);
 
   return (
     <div className="bg-white rounded-lg p-6 shadow">
@@ -67,7 +69,7 @@ export default function GridsAndWorkbooksSection() {
                 <td className="px-6 py-2 whitespace-nowrap">
                   <div className="flex items-center gap-2">
                     <ChevronDown className="h-4 w-4 text-gray-400" />
-                    <Star className="h-4 w-4 text-gray-400 cursor-pointer hover:text-yellow-500" />
+                    <Star className={`h-4 w-4 cursor-pointer ${item.isStarred ? 'text-yellow-500' : 'text-gray-400 hover:text-yellow-500'}`} />
                     <ImageIcon className="h-4 w-4 text-gray-400" /> {/* Random icon placeholder */}
                     <div className="text-sm font-medium text-gray-900">{item.name}</div>
                   </div>
